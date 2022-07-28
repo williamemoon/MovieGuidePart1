@@ -7,7 +7,7 @@
 def show_menu():
     print("Bill's Movie List Program")
     print("")
-    print("Menue: Type the following commands to modify the list")
+    print("Menu: Type the following commands to modify the list")
     print("------------------------------------------------------")
     print("list - Display the List of Movies")
     print("add - Add a Movie to the List")
@@ -33,7 +33,7 @@ def add(movie_list):
 def delete(movie_list):
     number = int(input("Number: "))
     if number < 1 or number > len(movie_list):
-        print("Invalid selection type a number of a movie")
+        print("Invalid selection, try again:")
         print(" ")
     else:
         movie = movie_list.pop(number-1)
